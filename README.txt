@@ -22,3 +22,7 @@ All Controllers support the following options :
 	SetBackground(BackgroundColor color);
 	SetBorder(BorderType border);
  
+ 
+ follow previous commits here :
+ https://github.com/shenkarTochna/shitot16/tree/master/Documents/Visual%20Studio%202015/Projects/Forms
+ 
