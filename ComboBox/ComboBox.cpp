@@ -48,8 +48,16 @@ void ComboBox::draw(Graphics g, int i, int j, size_t p) {
 		graphics.write(i + 1, j , this->options[this->GetSelectedIndex()]);
 		
 		for (int k = 0; k < options.size(); k++) {
-			graphics.write(this->getLeft() + 1, this->getTop() + k + 1, this->options[k]);
 
+			if (k == GetSelectedIndex()) {
+				graphics.setBackground(Color::Red);
+				graphics.write(this->getLeft() + 1, this->getTop() + k + 1, this->options[k]);
+				graphics.setBackground(this->background);
+
+			}
+			else {
+				graphics.write(this->getLeft() + 1, this->getTop() + k + 1, this->options[k]);
+			}
 		}
 
 	}
